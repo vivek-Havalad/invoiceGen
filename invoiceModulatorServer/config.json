@@ -1,0 +1,10 @@
+{
+  "secret" : "invoiceRecipt",
+  "secret_key_exp" : 86400000,
+  "session_name": "invoice-gen",
+  "port" : 9000,
+  "fromAddress" : "vivek.hv20@gmail.com",
+  "customerName" : "newCustomer",
+  "toAddress" : "vivek.hv20@gmail.com",
+  "pdfPath" : "./invoiceIncubator/"
+}
