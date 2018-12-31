@@ -1,0 +1,39 @@
+:host {
+  .navbar-fixed-left {
+    display: block;
+    position: fixed;
+    left: 0;
+    border: 0;
+    height: 100%;
+    width: 265px;
+    background-color: #2020fb;
+    border-radius: 0;
+    opacity: 0.8;
+    .no-speech {
+      margin-top: 20px;
+      color: white;
+    }
+    ul {
+      margin-left: -30px;
+      margin-top: 10px;
+      li {
+        outline: none;
+        list-style: none;
+        width: 210px;
+        padding: 10px;
+        color: #ffffff;
+        opacity: 0.9;
+        letter-spacing: 0.5px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+          border-radius: 5px;
+          background-color: blue;
+        }
+      }
+    }
+  }
+}

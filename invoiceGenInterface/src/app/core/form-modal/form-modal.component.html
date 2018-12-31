@@ -1,0 +1,33 @@
+<div class="invoice">
+  <form class="form-horizontal" (ngSubmit)="saveInvoice(invoiceForm.value)" #invoiceForm="ngForm">
+    <div class="invoice-form">
+      <div class="form-group row">
+        <div class="col-md-12 invoice-form-desc">
+          <textarea class="form-control text-controls" [(ngModel)]="invoice.address" placeholder="from address..." rows="10"
+            name="fromAddress" required #invoiceDesc="ngModel"></textarea>
+          <p *ngIf="invoiceDesc.errors" class="mandatory">Address is required</p>
+        </div>
+      </div>
+      <div class="form-group row invoice-form-row2">
+        <div class="col-md-6">
+          <input class="form-control" type="text" placeholder="name" autocomplete="off" [(ngModel)]="invoice.name" name="name"
+            required #invoiceName="ngModel">
+          <p *ngIf="invoiceName.errors" class="mandatory">Name is required</p>
+        </div>
+        <div class="col-md-6">
+          <input class="form-control" type="text" autocomplete="off" placeholder="Amount" [(ngModel)]="invoice.amount"
+            name="invoiceAmount" required #invoiceAmt="ngModel">
+          <p *ngIf="invoiceAmt.errors" class="mandatory">Amount is required</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-lg-right">
+            <button class="btn btn-primary" type="button" (click)="deleteinvoice(invoice)">Delete</button>
+            <button type="submit" class="btn btn-primary">Sumbit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

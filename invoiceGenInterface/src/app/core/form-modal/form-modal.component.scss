@@ -1,0 +1,21 @@
+:host {
+  .speech {
+    &-form {
+      &-desc {
+        min-height: 288px;
+      }
+      &-row2 {
+        min-height: 70px;
+      }
+      button {
+        margin-left: 15px;
+      }
+    }
+    &-search-row {
+      margin-bottom: 15px;
+      .col-md-4 {
+        text-align: right;
+      }
+    }
+  }
+}

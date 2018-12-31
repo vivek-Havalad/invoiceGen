@@ -1,0 +1,12 @@
+<aside class="navbar navbar-fixed-left inner-menu">
+  <ng-container *ngIf="menuItems.length > 0; else noInvoiceAvailable">
+    <ul class="menu">
+      <li *ngFor="let menu of menuItems" (click)="onClickItem(menu)">
+        <span>{{menu.name}} </span>
+      </li>
+    </ul>
+  </ng-container>
+  <ng-template #noInvoiceAvailable>
+    <p class="no-speech">Ooops...No invoice Available.</p>
+  </ng-template>
+</aside>

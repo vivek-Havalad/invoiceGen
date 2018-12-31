@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  background-color: #F3F3F3 !important;
+}
+.mandatory {
+  color: red;
+  font-size: 12px;
+}

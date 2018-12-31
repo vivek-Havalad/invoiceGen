@@ -1,0 +1,15 @@
+:host {
+  .navbar {
+    background-color: white;
+    height: 50px;
+    &-text {
+      font-size: 22px;
+      padding: 10px;
+      font-weight: 600;
+      color: darkgray;
+    }
+  }
+  .form {
+    margin: 20px 5px 0 265px;
+  }
+}
